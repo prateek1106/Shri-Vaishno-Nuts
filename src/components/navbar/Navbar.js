@@ -3,6 +3,7 @@ import { AppBar, Drawer, Button, Grid } from '@material-ui/core';
 import MenuSharpIcon from '@material-ui/icons/MenuSharp';
 import CloseIcon from '@material-ui/icons/Close';
 import { Link } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 
 import useStyles from './styles';
 import '../../App.css';
@@ -51,6 +52,9 @@ const Navbar = () => {
                     </Grid>
                     <Grid item>
                         <Button className={classes.navbarbutton} color="inherit"><Link to="people" activeClass={classes.active} spy={true} smooth={true}><span className="heading3">Directors</span></Link></Button>
+                    </Grid>
+                    <Grid item>
+                        <Button className={classes.navbarbutton} color="inherit"><RouterLink exact to="/products" style={{color: 'white' ,textDecoration: 'none' }} activeClass={classes.active} spy={true} smooth={true}><span className="heading3">Our Products</span></RouterLink></Button>
                     </Grid>
                     <Grid item>
                         <Button className={classes.navbarbutton} color="inherit"><Link to="aboutus" activeClass={classes.active} spy={true} smooth={true}><span className="heading3">About us</span></Link></Button>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { List, ListItem, Typography, Divider } from '@material-ui/core';
+import { List, ListItem, Divider } from '@material-ui/core';
+import { Link as RouterLink } from 'react-router-dom';
 
 import PhotoSizeSelectActualIcon from '@material-ui/icons/PhotoSizeSelectActual';
 import InfoIcon from '@material-ui/icons/Info';
@@ -9,6 +10,7 @@ import FeedbackIcon from '@material-ui/icons/Feedback';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import CallIcon from '@material-ui/icons/Call';
 import MailIcon from '@material-ui/icons/Mail';
+import CategoryIcon from '@material-ui/icons/Category';
 
 import useStyles from './styles';
 import '../../App.css';
@@ -28,6 +30,11 @@ const Sidebar = ({ closeDrawer }) => {
                         <span className="heading3"><InfoIcon fontSize="small"/>&nbsp;About us</span>
                     </ListItem>
                 </Link>
+                <RouterLink to="/products" style={{color: 'black',textDecoration: 'none' }} activeClass={classes.active} spy={true} smooth={true}>
+                    <ListItem button className={`${classes.navbarbutton} justify-content-center`} onClick={closeDrawer}>
+                        <span className="heading3"><CategoryIcon fontSize="small"/>&nbsp;Our Products</span>
+                    </ListItem>
+                </RouterLink>
                 <Link to="people" activeClass={classes.active} spy={true} smooth={true}>
                     <ListItem button className={`${classes.navbarbutton} justify-content-center`} onClick={closeDrawer}>
                         <span className="heading3"><PeopleIcon fontSize="small"/>&nbsp;Directors</span>
