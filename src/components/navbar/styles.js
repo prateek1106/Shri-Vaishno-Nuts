@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        background: '#033C11',
+        background: 'rgb(18, 64, 163)',
         color: 'white',
         zIndex: '99999'
     },

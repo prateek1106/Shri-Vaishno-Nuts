@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+.card-box{
+    width: 18vw;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3vh;
+    margin-top: 4vh;
+    padding-bottom: 2.5vh;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 6px 6px 5px #aaaaaa;
+    transition: all .2s ease-in-out;
+}
+
+div.card-box:hover{
+    Transform:scale(1.1);
+}
+
+.thumbnail{
+    width: 16vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 2vh;
+}
+
+.product-details{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.product-name{
+    font-size: 4vh;
+    font-family: 'Dongle', sans-serif;
+    font-weight: 600;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 1199px ){
+    .card-box{
+        width: 18vw;
+        padding-top: 3vh;
+        margin-top: 3vh;
+        padding-bottom: 2vh;
+    }
+    .thumbnail{
+        width: 16vw;
+    }
+}
+
+@media screen and (max-width: 991px ){
+    .card-box{
+        width: 26vw;
+        padding-top: 4vh;
+        margin-top: 5vh;
+        padding-bottom: 2.5vh;
+    }
+    .thumbnail{
+        width: 24vw;
+    }
+}
+
+@media screen and (max-width: 767px ){
+    .card-box{
+        width: 30vw;
+    }
+    .thumbnail{
+        width: 26vw;
+        margin-left: 2vw;
+    }
+}
+
+@media screen and (max-width: 575px ){
+    .card-box{
+        width: 50vw;
+        padding-top: 4vh;
+        margin-top: 6vh;
+        padding-bottom: 3.5vh;
+    }
+    .thumbnail{
+        width: 44vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+}

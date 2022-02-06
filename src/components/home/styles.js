@@ -41,7 +41,7 @@ export default makeStyles((theme) => ({
     brandHeading :{
         fontFamily: 'Roboto Slab, serif',
         fontSize: '6vh',
-        color: '#069128',
+        color: 'rgb(18, 64, 163)',
         [theme.breakpoints.down('xs')]: {
             fontSize: '3.5vh',
         }
@@ -50,7 +50,7 @@ export default makeStyles((theme) => ({
         fontFamily: 'Lato, serif',
         fontWeight: 'bold',
         fontSize: '2vh',
-        color: '#125C13',
+        color: 'rgb(18, 64, 163)',
         [theme.breakpoints.down('xs')]: {
             fontSize: '1vh',
         }

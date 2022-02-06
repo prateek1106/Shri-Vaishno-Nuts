@@ -28,7 +28,7 @@ const Home = () => {
                 </div>
 
                 <div className={classes.enquireBox}>
-                    <button className="btn btn-success">
+                    <button className="btn btn-primary">
                         <div className={classes.enquireText}>
                             <Link to="enquiry" spy={true} smooth={true}>Enquire</Link>
                         </div>

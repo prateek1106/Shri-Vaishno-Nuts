@@ -1,0 +1,107 @@
+.page{
+    background-color: rgb(255, 255, 255);
+}
+
+.heading-productpage{
+    display: flex;
+    justify-content: center;
+    padding-top: 8vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 5vh;
+}
+
+.back-home{
+    display: flex;
+    justify-content: center;
+    font-size: 2vh;
+}
+
+.heading-box{
+    height: 25vh;
+    color: rgb(18, 64, 163);
+}
+
+.line{
+    width: 80%;
+    background-color: rgb(24, 6, 66);
+    margin: auto;
+    height: 2px;
+}
+
+.product-selected-box{
+    background-color: rgb(224, 246, 255);
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.selected-details{
+    display: flex;
+    align-items: center;
+    height: 45vh;
+}
+
+.attribute-box{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 5vh;
+}
+
+.value-box{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.attribute{
+    font-weight: 800;
+    font-size: 2.5vh;
+    margin-top: 1.5vh;
+}
+
+.value{
+    font-size: 2.5vh;
+    margin-top: 1.5vh;
+}
+
+.close-row-desktop{
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.close-row-mobile{
+    text-align: right;
+    margin-bottom: 0;
+    display: none;
+}
+
+.close-link{
+    margin-right: 2vh;
+    font-size: 2vh;
+    margin-bottom: 0;
+    padding-top: 1vh;
+    font-weight: 800;
+    color: red;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 575px ){
+    .attribute-box{
+        margin-left: 3vw;
+    }
+    .selected-details{
+        display: flex;
+        align-items: flex-start;
+        margin-top: 2vh;
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .close-row-desktop{
+        display: none;
+    }
+
+    .close-row-mobile{
+        display: inline;
+    }
+}
