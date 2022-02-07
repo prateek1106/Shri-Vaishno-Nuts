@@ -11,12 +11,6 @@
     font-size: 5vh;
 }
 
-.back-home{
-    display: flex;
-    justify-content: center;
-    font-size: 2vh;
-}
-
 .heading-box{
     height: 25vh;
     color: rgb(18, 64, 163);

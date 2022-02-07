@@ -44,9 +44,6 @@ const ProductsPage = () => {
                     <div className="heading-productpage">
                     Our Products
                     </div>
-                    <div className="back-home">
-                    <RouterLink exact to="/" style={{color: 'blue' ,textDecoration: 'underline' }}>Back To Home Page</RouterLink>
-                    </div>
                 </div>
 
                 <hr className="line"/>

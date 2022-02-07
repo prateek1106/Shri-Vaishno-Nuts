@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { AppBar, Drawer, Button, Grid } from '@material-ui/core';
 import MenuSharpIcon from '@material-ui/icons/MenuSharp';
 import CloseIcon from '@material-ui/icons/Close';
-import { Link } from 'react-scroll';
-import { Link as RouterLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import useStyles from './styles';
 import '../../App.css';
@@ -30,37 +29,71 @@ const Navbar = () => {
                 <Grid>
                     <Grid item>
                         {(anchor === false)?
-                            <Button className={classes.expand} onClick={openDrawer}><MenuSharpIcon fontSize="large" style={{color: 'white'}}/></Button>                        
+                            <Button className={classes.expand} onClick={openDrawer}>
+                                <MenuSharpIcon fontSize="large" style={{color: 'white'}}/></Button>                        
                         :
-                            <Button className={classes.expand} onClick={closeDrawer}><CloseIcon fontSize="large" style={{color: 'white'}}/></Button>
+                            <Button className={classes.expand} onClick={closeDrawer}>
+                                <CloseIcon fontSize="large" style={{color: 'white'}}/></Button>
                         }
                         <Drawer open={anchor} onClose={closeDrawer}>
                             <Sidebar closeDrawer={closeDrawer}/>
                         </Drawer>
                     </Grid>
                     <Grid item>
-                        <Button className={classes.title} color="inherit"><Link to="home" spy={true} smooth={true}><span className="heading" style={{color:'white'}}>Shri Vaishno</span></Link></Button>
+                        <Button className={classes.title} color="inherit">
+                        <HashLink to={'/#home'} style={{color: 'white' , textDecoration: 'none'}} spy={true} smooth={true} >
+                                <span className="heading" style={{color:'white'}}>Shri Vaishno</span>
+                        </HashLink>
+                        </Button>
                     </Grid>
                     <Grid item>
-                        <Button className={classes.title2} color="inherit"><Link to="homeM" spy={true} smooth={true}><span className="heading" style={{color:'white'}}>Shri Vaishno</span></Link></Button>
+                        <Button className={classes.title2} color="inherit">
+                        <HashLink to={'/#homeM'} style={{color: 'white' , textDecoration: 'none'}} spy={true} smooth={true} >
+                                <span className="heading" style={{color:'white'}}>Shri Vaishno</span>
+                        </HashLink>
+                        </Button>
                     </Grid>
                     <Grid item>
-                        <Button className={classes.navbarbutton} color="inherit"><Link to="contactus" activeClass={classes.active} spy={true} smooth={true}><span className="heading3">Contact us</span></Link></Button>
+                        <Button className={classes.navbarbutton} color="inherit">
+                            <HashLink to={'/#contactus'} style={{color: 'white' }} spy={true} smooth={true} >
+                                <span className="heading3">Contact us</span>
+                            </HashLink>
+                        </Button>
                     </Grid>
                     <Grid item>
-                        <Button className={classes.navbarbutton} color="inherit"><Link to="enquiry" activeClass={classes.active} spy={true} smooth={true}><span className="heading3">Enquiry</span></Link></Button>
+                        <Button className={classes.navbarbutton} color="inherit">
+                        <HashLink to={'/#enquiry'} style={{color: 'white' }} spy={true} smooth={true} >
+                                <span className="heading3">Enquiry</span>
+                        </HashLink>
+                        </Button>
                     </Grid>
                     <Grid item>
-                        <Button className={classes.navbarbutton} color="inherit"><Link to="people" activeClass={classes.active} spy={true} smooth={true}><span className="heading3">Directors</span></Link></Button>
+                        <Button className={classes.navbarbutton} color="inherit">
+                        <HashLink to={'/#people'} style={{color: 'white' }} spy={true} smooth={true} >
+                                <span className="heading3">Directors</span>
+                        </HashLink>
+                        </Button>
                     </Grid>
                     <Grid item>
-                        <Button className={classes.navbarbutton} color="inherit"><RouterLink exact to="/products" style={{color: 'white' ,textDecoration: 'none' }} activeClass={classes.active} spy={true} smooth={true}><span className="heading3">Our Products</span></RouterLink></Button>
+                        <Button className={classes.navbarbutton} color="inherit">
+                        <HashLink to={'/products'} style={{color: 'white' }} spy={true} smooth={true} >
+                                <span className="heading3">Our Products</span>
+                         </HashLink>
+                        </Button>
                     </Grid>
                     <Grid item>
-                        <Button className={classes.navbarbutton} color="inherit"><Link to="aboutus" activeClass={classes.active} spy={true} smooth={true}><span className="heading3">About us</span></Link></Button>
+                        <Button className={classes.navbarbutton} color="inherit">
+                        <HashLink to={'/#aboutus'} style={{color: 'white' }} spy={true} smooth={true} >
+                                <span className="heading3">About us</span>
+                        </HashLink>
+                        </Button>
                     </Grid>
                     <Grid item>
-                        <Button className={classes.navbarbutton} color="inherit"><Link to="carousel" activeClass={classes.active} spy={true} smooth={true}><span className="heading3">Glimpse</span></Link></Button>
+                        <Button className={classes.navbarbutton} color="inherit">
+                        <HashLink to={'/#carousel'} style={{color: 'white' }} spy={true} smooth={true} >
+                                <span className="heading3">Glimpse</span>
+                        </HashLink>
+                        </Button>
                     </Grid>
                 </Grid>
             </AppBar>

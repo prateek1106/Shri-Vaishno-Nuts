@@ -5,9 +5,11 @@ import App from './App';
 import ProductsPage from './components/productsPage/ProductsPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 ReactDOM.render(
     <Router>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/products" element={<ProductsPage />} />
