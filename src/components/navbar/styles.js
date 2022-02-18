@@ -58,5 +58,12 @@ export default makeStyles((theme) => ({
             textDecoration: 'none',
             color: '#ff652f'
         }
+    },
+    navbarItem: {
+        color: "white",
+        "&:hover": {
+            textDecoration: 'none',
+            color: '#ff652f'
+        }
     }
 }))

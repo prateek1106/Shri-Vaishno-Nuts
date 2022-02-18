@@ -1,6 +1,6 @@
 import React from 'react';
 import { Paper, Typography, Grid } from '@material-ui/core';
-
+import background from '../../images/nut-bg-3.png';
 import useStyles from './styles';
 import '../../App.css'
 

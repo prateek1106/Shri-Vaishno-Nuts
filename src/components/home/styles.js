@@ -63,10 +63,15 @@ export default makeStyles((theme) => ({
     },
     enquireText: {
         fontFamily: 'Montserrat, sans-serif',
-        fontSize: '2.5vh',
+        fontSize: '2vh',
         padding: '1vh',
         [theme.breakpoints.down('xs')]: {
             fontSize: '2vh',
         }
-    }
+    },
+    enquireButton: {
+        display: 'inline-block',
+        paddingRight: '1vw',
+        paddingLeft: '1vw',
+    },
 }))

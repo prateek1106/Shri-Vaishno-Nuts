@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
     root: {
-        background:'#EDFFE4',
+        background:'white',
         textAlign: 'center',
         borderRadius: '0',
         paddingTop: '70px',

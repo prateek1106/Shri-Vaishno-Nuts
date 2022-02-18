@@ -1,8 +1,7 @@
 import React from 'react';
-import { Paper, CardMedia } from '@material-ui/core';
 import logo from '../../images/back.png';
 import useStyles from './styles';
-import { Link } from 'react-scroll';
+import { HashLink } from 'react-router-hash-link';
 
 const Home = () => {
     const classes = useStyles();
@@ -28,11 +27,20 @@ const Home = () => {
                 </div>
 
                 <div className={classes.enquireBox}>
-                    <button className="btn btn-primary">
-                        <div className={classes.enquireText}>
-                            <Link to="enquiry" spy={true} smooth={true}>Enquire</Link>
-                        </div>
-                    </button>
+                    <div className={classes.enquireButton}>
+                        <button className="btn btn-primary">
+                            <div className={classes.enquireText}>
+                            <HashLink to={'/#contactus'} style={{ color: 'white', textDecoration: 'none'}} smooth={true}>Contact Us</HashLink>
+                            </div>
+                        </button>
+                    </div>
+                    <div className={classes.enquireButton}>
+                        <button className="btn btn-info">
+                            <div className={classes.enquireText}>
+                            <HashLink to={'/products'} style={{ color: 'white', textDecoration: 'none'}} smooth={true}>View Products</HashLink>
+                            </div>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

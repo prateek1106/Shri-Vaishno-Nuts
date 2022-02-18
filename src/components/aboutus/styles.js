@@ -7,6 +7,11 @@ export default makeStyles((theme) => ({
         borderRadius: '0',
         paddingTop: '70px',
         minHeight: '100vh',
+        position: 'relative',
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
         [theme.breakpoints.down('sm')]: {
             minHeight: '0',
             paddingTop: '20px',
