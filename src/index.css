@@ -2,6 +2,7 @@
   width:0px
 } */
 
-body {
-  background-color: lightgray;
+html,body
+{
+    background-color: lightgray;
 }

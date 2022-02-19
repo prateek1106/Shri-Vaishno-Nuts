@@ -1,4 +1,4 @@
-.page{
+.products-page{
     background-color: rgb(255, 255, 255);
 }
 
@@ -35,26 +35,11 @@
     height: 45vh;
 }
 
-.attribute-box{
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 5vh;
-}
-
-.value-box{
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.attribute{
-    font-weight: 800;
+.attribute-points{
     font-size: 2.5vh;
     margin-top: 1.5vh;
-}
-
-.value{
-    font-size: 2.5vh;
-    margin-top: 1.5vh;
+    display: flex;
+    justify-content: center;
 }
 
 .close-row-desktop{

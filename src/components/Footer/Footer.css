@@ -1,6 +1,7 @@
 .footer-box{
     background-color: #323233;
     color: white;
+    width: 101%;
 }
 
 .quick-links{
@@ -67,6 +68,7 @@
 }
 
 .end-strip{
+    width: 101%;
     display: flex;
     justify-content: center;
 }

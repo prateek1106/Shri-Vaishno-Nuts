@@ -36,20 +36,19 @@ const ProductsPage = () => {
         
         <Navbar/>
 
-        <div className="page row">
-            <div className="col-md-2">
-            </div>
+        <div className="products-page ">
             <div className="col-12 content">
+
                 <div className="col-12 heading-box">
                     <div className="heading-productpage">
                     Our Products
                     </div>
                 </div>
 
-                <hr className="line"/>
-
                 {selectedProduct ? (
+                    
                     <div className="product-selected-box">  
+                    <hr className="line"/>
 
                     <div className="close-row-mobile">
                         <p className="close-link" onClick={()=> deselectProduct()}>
@@ -77,32 +76,41 @@ const ProductsPage = () => {
 
                             <div className="selected-details">
                                 <div className="row selected-details-box">
-                                    <div className="col-6 attribute-box">
-                                        <div className="attribute">Grade:</div>
-                                        <div className="attribute">Color:</div>
-                                        <div className="attribute">Packaging Type:	</div>
-                                        <div className="attribute">Processing Type:</div>
-                                        <div className="attribute">Broken %age:	</div>
-                                        <div className="attribute">Cultivation Type:</div>	
+                                    <br></br>
+                                    <div className="attribute-points col-12">
+                                        <b>Grade:</b> &nbsp;
+                                        {selectedProduct.grade}
                                     </div>
-                                    <div className="col-5 value-box">
-                                        <div className="value">{selectedProduct.grade}</div>	
-                                        <div className="value">{selectedProduct.color}</div>	
-                                        <div className="value">{selectedProduct.packagingtype}</div>	
-                                        <div className="value">{selectedProduct.processingtype}</div>	
-                                        <div className="value">{selectedProduct.brokenage}</div>	
-                                        <div className="value">{selectedProduct.cultivationtype}</div>	
+                                    <div className="attribute-points col-12">
+                                        <b>Color:</b> &nbsp;
+                                        {selectedProduct.color}
                                     </div>
+                                    <div className="attribute-points col-12">
+                                        <b>Processing Type:</b> &nbsp;
+                                        {selectedProduct.processingtype}
+                                    </div>
+                                    <div className="attribute-points col-12">
+                                        <b>Broken %age:</b> &nbsp;
+                                        {selectedProduct.brokenage}
+                                    </div>
+                                    <div className="attribute-points col-12">
+                                        <b>Cultivation Type:</b> &nbsp;
+                                        {selectedProduct.cultivationtype}
+                                    </div>
+                                    <div className="attribute-points col-12">
+                                        <b>Packaging Type:	</b> &nbsp;
+                                        {selectedProduct.packagingtype}
+                                    </div>
+                                        	
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <hr className="line"/>
                 </div>
                 ):(
                     <div></div>
                 )}
-
-                <hr className="line"/>
 
                 <div className="software-box">
                 <div className="row">

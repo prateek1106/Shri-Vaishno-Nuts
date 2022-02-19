@@ -29,7 +29,6 @@ const Enquiry = () => {
             return;
         }
 
-        alert("Thank you for the enquiry");
         setEnquiry({
                 name:'',
                 contact:'',
@@ -44,7 +43,7 @@ const Enquiry = () => {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "enquiry", enquiry })
+            body: encode({ "form-name": "enquiry", ...enquiry })
         })
         .then(res=> {
             alert("Thank you for the enquiry")
@@ -71,7 +70,8 @@ const Enquiry = () => {
             <hr style={{width:'20%'}}/>
             <Grid container justify="center" alignItems="center" className={classes.container}>
                 <Grid item xs={10} sm={8} md={6}>
-                <form name="enquiry" method="POST" data-netlify="true" autoComplete="off" onSubmit={handleSubmit}>
+                <form name="enquiry" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" autoComplete="off" onSubmit={handleSubmit}>
+                        <input type="hidden" name="form-name" value="enquiry"/>
                         <Row className="text-center justify-content-center mb-4">
                             <Typography variant="h6" fullWidth>
                                 Send us your enquiry by filling the form
