@@ -1,0 +1,45 @@
+.importers-wrapper{
+    background-color: #FFFCD9;
+}
+
+.center-div-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.africa-map{
+    height: 55vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.importers-text{
+    color: #a11f1f;
+    font-size: 3vh;
+    font-weight: 600;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.text-36{
+    font-size: 4.5vh;
+    font-weight: 800;
+}
+
+.text-34{
+    font-size: 4vh;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 575px ){
+    .africa-map{
+        margin-top: 4vh;
+        margin-bottom: 0;
+    }
+    .importers-text{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        text-align: center;
+    }
+}

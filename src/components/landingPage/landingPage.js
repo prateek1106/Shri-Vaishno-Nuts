@@ -8,6 +8,8 @@ import ContactUs from '../contactus/ContactUs';
 import People from '../directors/Directors';
 import { Grid, Paper } from '@material-ui/core';
 import Footer from '../Footer/Footer';
+import Importers from '../Importers/Importers';
+import Gallery from '../Gallery/Gallery';
 
 const landingPage = () => {
     return(
@@ -21,6 +23,12 @@ const landingPage = () => {
             </div>
             <div id="aboutus">
                 <AboutUs/>
+            </div>
+            <div id="importers">
+                <Importers/>
+    </div>
+            <div className='gallery'>
+                <Gallery/>
             </div>
             {/*<div id="people">
                 <People/>

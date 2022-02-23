@@ -1,0 +1,27 @@
+.gallery-box{
+    width: 100%;
+}
+.nut-comic-image{
+    height: 40vh;
+}
+
+.comic-image-box{
+    background-color: 	#e9dcdc;
+    height: 44vh;
+    width: 44vh;
+    transition: all .2s ease-in-out;
+    border-radius: 10px;
+    margin-bottom: 20vh;
+    margin-top: 20vh;
+}
+
+div.comic-image-box:hover{
+    Transform:scale(1.1);
+}
+
+@media screen and (max-width: 575px ){
+    .comic-image-box{
+        margin-top: 6vh;
+        margin-bottom: 6vh;
+    }
+}
