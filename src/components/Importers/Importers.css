@@ -36,6 +36,8 @@
     .africa-map{
         margin-top: 4vh;
         margin-bottom: 0;
+        width: 100vw;
+        height: auto;
     }
     .importers-text{
         margin-top: 5vh;
