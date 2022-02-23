@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
     root: {
-        background:'rgb(224, 246, 255)',
+        background:'rgba(255, 252, 217, 255)',
         textAlign: 'center',
         borderRadius: '0',
         paddingTop: '70px',

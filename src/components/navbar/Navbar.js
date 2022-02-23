@@ -48,7 +48,7 @@ const Navbar = () => {
                     </Grid>
                     <Grid item>
                         <Button className={classes.title2} color="inherit">
-                        <HashLink to={'/#homeM'} style={{color: 'white' , textDecoration: 'none'}} spy={true} smooth={true} >
+                        <HashLink to={'/#home'} style={{color: 'white' , textDecoration: 'none'}} spy={true} smooth={true} >
                                 <span className="heading" style={{color:'white'}}>Shri Vaishno</span>
                         </HashLink>
                         </Button>

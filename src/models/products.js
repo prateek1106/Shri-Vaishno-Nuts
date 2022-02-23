@@ -2,9 +2,9 @@ import thumbnails from './thumbnails';
 
 const products = [
     {
-        "id": 1,
-        "name": "Butts Cashew Nut",
-        "thumbnailURL": thumbnails[0],
+        "id": 1, 
+        "name": "W-210 Cashew Nut",
+        "thumbnailURL": thumbnails[16],
         "grade": "WW240",
         "color": "white",
         "packagingtype": "loose",
@@ -14,9 +14,9 @@ const products = [
     },
     {
         "id": 2,
-        "name": "DW Cashew Nut",
-        "thumbnailURL": thumbnails[1],
-        "grade": "WW240",
+        "name": "WW-240 Cashew Nut",
+        "thumbnailURL": thumbnails[18],
+        "grade": "W240",
         "color": "white",
         "packagingtype": "loose",
         "processingtype": "baked",
@@ -25,9 +25,9 @@ const products = [
     },
     {
         "id": 3,
-        "name": "JB Cashew Nut",
-        "thumbnailURL": thumbnails[2],
-        "grade": "WW240",
+        "name": "WW-320 Cashew Nut",
+        "thumbnailURL": thumbnails[19],
+        "grade": "W240",
         "color": "white",
         "packagingtype": "loose",
         "processingtype": "baked",
@@ -182,19 +182,17 @@ const products = [
         "brokenage": "2%",
         "cultivationtype": "common" 
     },
-
     {
         "id": 17,
-        "name": "W-210 Cashew Nut",
-        "thumbnailURL": thumbnails[16],
+        "name": "Butts Cashew Nut",
+        "thumbnailURL": thumbnails[0],
         "grade": "WW240",
         "color": "white",
         "packagingtype": "loose",
         "processingtype": "baked",
         "brokenage": "2%",
-        "cultivationtype": "common" 
+        "cultivationtype": "common"
     },
-
     {
         "id": 18,
         "name": "W-400 Cashew Nut",
@@ -209,21 +207,20 @@ const products = [
 
     {
         "id": 19,
-        "name": "WW-240 Cashew Nut",
-        "thumbnailURL": thumbnails[18],
-        "grade": "W240",
+        "name": "DW Cashew Nut",
+        "thumbnailURL": thumbnails[1],
+        "grade": "WW240",
         "color": "white",
         "packagingtype": "loose",
         "processingtype": "baked",
         "brokenage": "2%",
-        "cultivationtype": "common" 
+        "cultivationtype": "common"
     },
-
     {
         "id": 20,
-        "name": "WW-320 Cashew Nut",
-        "thumbnailURL": thumbnails[19],
-        "grade": "W240",
+        "name": "JB Cashew Nut",
+        "thumbnailURL": thumbnails[2],
+        "grade": "WW240",
         "color": "white",
         "packagingtype": "loose",
         "processingtype": "baked",

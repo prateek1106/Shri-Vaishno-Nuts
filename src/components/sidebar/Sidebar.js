@@ -3,7 +3,6 @@ import { List, ListItem, Divider } from '@material-ui/core';
 import { HashLink } from 'react-router-hash-link';
 import PhotoSizeSelectActualIcon from '@material-ui/icons/PhotoSizeSelectActual';
 import InfoIcon from '@material-ui/icons/Info';
-import PeopleIcon from '@material-ui/icons/People';
 import FeedbackIcon from '@material-ui/icons/Feedback';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import CallIcon from '@material-ui/icons/Call';
@@ -53,7 +52,7 @@ const Sidebar = ({ closeDrawer }) => {
                     <MailIcon fontSize="small"/>&nbsp;shrivaishnonuts@gmail.com
                 </ListItem>
                 <ListItem className="justify-content-center">
-                    <CallIcon fontSize="small"/>&nbsp;9560393902
+                    <CallIcon fontSize="small"/>&nbsp;+91-8287372475
                 </ListItem>
             </List>
         </div>

@@ -8,7 +8,7 @@ const AboutUs = () => {
     const classes = useStyles();
     return (
         <Paper className={classes.root}>
-        <div className="heading2">About us</div>
+        <div className="heading2"><b>About us</b></div>
         <hr style={{width:'20%'}}/>
             <Grid container alignItems="center" justify="space-evenly" className={classes.container}>
                 <Grid item xs={10} sm={5}>

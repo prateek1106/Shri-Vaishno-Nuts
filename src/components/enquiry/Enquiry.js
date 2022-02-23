@@ -66,7 +66,7 @@ const Enquiry = () => {
     return (
         <Paper className={classes.root}>
             { (load === true)?<Loading/>:<div></div>}
-            <div className="heading2">Enquiry</div>
+            <div className="heading2"><b>Enquiry</b></div>
             <hr style={{width:'20%'}}/>
             <Grid container justify="center" alignItems="center" className={classes.container}>
                 <Grid item xs={10} sm={8} md={6}>
@@ -120,7 +120,7 @@ const Enquiry = () => {
                             />
                         </Row>
                         <Row>
-                            <Button className={classes.buttonSubmit} variant="contained" color="primary" type="submit" size="large" fullWidth>Submit</Button>
+                            <Button className={classes.buttonSubmit} variant="contained" color="secondary" type="submit" size="large" fullWidth>Submit</Button>
                         </Row>
                     </form>
                 </Grid>

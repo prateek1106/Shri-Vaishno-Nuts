@@ -13,18 +13,18 @@
 
 .heading-box{
     height: 25vh;
-    color: rgb(18, 64, 163);
+    color: rgba(161, 31, 31, 255);
 }
 
 .line{
     width: 80%;
-    background-color: rgb(24, 6, 66);
+    background-color: rgba(161, 31, 31, 255);
     margin: auto;
     height: 2px;
 }
 
 .product-selected-box{
-    background-color: rgb(224, 246, 255);
+    background-color: rgba(255, 252, 217, 255);
     margin-left: 2vw;
     margin-right: 2vw;
 }

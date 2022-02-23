@@ -1,7 +1,6 @@
 .footer-box{
     background-color: #323233;
     color: white;
-    width: 101%;
 }
 
 .quick-links{
@@ -16,6 +15,12 @@
     align-items: center;
     justify-content: center;
     height: 40vh;
+}
+
+.svn-logo-bw-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-box{
@@ -68,7 +73,6 @@
 }
 
 .end-strip{
-    width: 101%;
     display: flex;
     justify-content: center;
 }

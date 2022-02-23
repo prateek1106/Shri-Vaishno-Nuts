@@ -35,5 +35,21 @@ export default makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             marginBottom: '10px'
         }
+    },
+    address: {
+        backgroundColor: 'rgba(161, 31, 31, 255)'
+    },
+    mail: {
+        backgroundColor: 'rgba(161, 31, 31, 255)',
+        "&:hover": {
+            backgroundColor: '#E2002D'
+        }
+    },
+    call: {
+        backgroundColor: 'rgba(161, 31, 31, 255)',
+        "&:hover": {
+            backgroundColor: '#E2002D'
+        }
     }
+
 }))

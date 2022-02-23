@@ -15,7 +15,7 @@ const Glimpse = () => {
     const classes = useStyles();
     return (
         <Paper className={classes.root}>
-            <div className="heading2">A glimpse</div>
+            <div className="heading2"><b>A glimpse</b></div>
             <hr style={{width:'20%'}} className="mb-5"/>
             <Grid container alignItems="center" justify="center" className={classes.container}>
                 <Grid xs={12} sm={10} md={8} item>

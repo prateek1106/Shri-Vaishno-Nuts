@@ -15,7 +15,8 @@ import CopyrightIcon from '@material-ui/icons/Copyright';
 const Footer = () => {
     return(
         <div className="wrapper">
-        <div className="footer-box row">
+        <div className="footer-box container-fluid">
+            <div className="row">
             <div className="quick-links col-md-12 col-lg-4">
                 <div className="footer-links">
                     <b><h5>Quick Links</h5></b>
@@ -54,7 +55,9 @@ const Footer = () => {
             </div>
             <div className="svn-logo col-md-12 col-lg-4">
                 <div className="svn-logo-box">
-                        <img className="logo-bw" src={logo} alt="svn-logo"/>
+                        <div className="svn-logo-bw-container">
+                            <img className="logo-bw" src={logo} alt="svn-logo"/>
+                        </div>
                         <br/>
                         Shri Vaishno Nuts Factory Private Limited
                 </div>
@@ -70,17 +73,20 @@ const Footer = () => {
                 <br/><br/>
                 <CallIcon fontSize="small"/>&nbsp;shrivaishnonuts@gmail.com
                 <br/>
-                <MailIcon fontSize="small"/>Phone : +91 956 039 3902
+                <MailIcon fontSize="small"/>&nbsp;Phone : +91 828 737 2475
                 </div>
             </div>
         </div>
-        <div className="end-strip row">
+        </div>
+        <div className="end-strip container-fluid">
+            <div className="row">
             <div className="end-strip-item col-xs-12 col-lg-6">
             Copyright <CopyrightIcon/> 2022 - Shri Vaishno Nuts
             </div>
             <div className="end-strip-item col-xs-12 col-lg-6">
                 <div className="dev-line">Developed & Maintained by&nbsp;</div> 
                 <div className="dev-line dev-name">Prateek Sharma</div>
+            </div>
             </div>
         </div>
         </div>

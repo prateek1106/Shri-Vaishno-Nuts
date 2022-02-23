@@ -27,8 +27,8 @@ export default makeStyles((theme) => ({
         width: '15vh',
         objectFit: 'cover',
         [theme.breakpoints.down('xs')]: {
-            height: '8vh',
-            width: '8vh'
+            height: '12vh',
+            width: '12vh'
         }
     },
     brandText: {
@@ -36,21 +36,23 @@ export default makeStyles((theme) => ({
         display: 'inline-block',
         verticalAlign: 'middle',
         textAlign: 'left',
-        paddingLeft: '1vw',
+        paddingLeft: '2vw',
     },
     brandHeading :{
-        fontFamily: 'Roboto Slab, serif',
+        fontFamily: 'Poppins ,sans-serif',
         fontSize: '6vh',
-        color: 'rgb(18, 64, 163)',
+        height: '6vh',
+        color: 'rgba(161, 31, 31, 255)',
         [theme.breakpoints.down('xs')]: {
             fontSize: '3.5vh',
+            height: '3.5vh'
         }
     },
     brandSubHeading: {
         fontFamily: 'Lato, serif',
         fontWeight: 'bold',
         fontSize: '2vh',
-        color: 'rgb(18, 64, 163)',
+        color: 'rgba(161, 31, 31, 255)',
         [theme.breakpoints.down('xs')]: {
             fontSize: '1vh',
         }
