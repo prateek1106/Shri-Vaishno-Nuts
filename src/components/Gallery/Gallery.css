@@ -1,12 +1,12 @@
 .gallery-box{
-    width: 100%;
+    background-color: white;
 }
 .nut-comic-image{
     height: 40vh;
 }
 
 .comic-image-box{
-    background-color: 	#e9dcdc;
+    background-color:#e9dcdc;
     height: 44vh;
     width: 44vh;
     transition: all .2s ease-in-out;
